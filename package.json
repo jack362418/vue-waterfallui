@@ -1,45 +1,37 @@
 {
-  "name": "h5-vue-ts-template",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vue-waterfallui",
+  "version": "0.0.3",
+  "description": "基于vue2瀑布流布局组件",
+  "private": false,
+  "license": "MIT",
+  "main": "lib/vue-waterfall.umd.js",
+  "module": "lib/vue-waterfall.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {},
-      "postcss-px2rem-exclude": {
-        "remUnit": 75,
-        "exclude": "/node_modules/i"
-      }
-    }
+    "build:prod-ui": "vue-cli-service build --target lib --dest lib src/components/index.js"
   },
   "dependencies": {
+    "core-js": "^3.6.5",
     "lib-flexible": "^0.3.2",
-    "px2rem-loader": "^0.1.9",
-    "vant": "^3.0.16",
-    "vue": "^3.0.0",
-    "vue-router": "^4.0.0-0",
-    "vuex": "^4.0.0-0"
+    "postcss-px2rem": "^0.3.0",
+    "vant": "^2.12.37",
+    "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.18.0",
-    "@typescript-eslint/parser": "^4.18.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-plugin-typescript": "~4.5.0",
-    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
-    "@vue/eslint-config-typescript": "^7.0.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0",
-    "node-sass": "^4.12.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
     "postcss-px2rem-exclude": "^0.0.6",
-    "px2rem-loader": "^0.1.9",
-    "sass-loader": "^8.0.2",
-    "typescript": "~4.1.5"
-  }
+    "vue-template-compiler": "^2.6.11"
+  },
+  "keywords": [
+    "vue2",
+    "vue",
+    "waterfall",
+    "vue-waterfall",
+    "瀑布流",
+    "瀑布流组件"
+  ]
 }
